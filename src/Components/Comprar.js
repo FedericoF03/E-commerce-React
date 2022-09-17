@@ -68,7 +68,7 @@ import Footer from "./Footer";
                     <p className="box__compras__contents--text" ref={refTextCart}>Usted tiene esto en el carro:</p>
                     <div className="flex box__compras__contents--cards">{
                         products.map(el=>(
-                        <div key={el.id + "35"}>
+                        <div className="cards__compra" key={el.id + "35"}>
                             <NavLink to={`/productos/${el.link}`}>
                             <img  
                             className="compras--img"

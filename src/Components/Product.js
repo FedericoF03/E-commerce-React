@@ -4,7 +4,6 @@ import NavBar from './Nav';
 import Footer from './Footer';
 
 
-
 const Product = ()=>{
     const urlName = useParams();
     let [count, setCount] = useState(1);
@@ -162,9 +161,7 @@ const Product = ()=>{
                             }}>+</button>
                         </div>
                         <div className='box__product__box__button'>
-                            <button className='box__product__button--shop' onClick={()=>{
-                                comprar();
-                            }}>Comprar</button>
+                            <button className='box__product__button--shop' onClick={()=>{comprar();}}>Comprar</button>
                             <button className='box__product__button--go' onClick={()=>{navigate("/comprar")}}>Ir a las compras</button>
                         </div>
                 </div>)    

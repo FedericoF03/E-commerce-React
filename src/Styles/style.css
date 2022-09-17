@@ -10,66 +10,62 @@ a {
 /*Nav*/
 .container__nav {
     height: 10vh;
-    background-color: #f07c46;
     display: flex;
+    background-color: #FD611A;
     justify-content: space-between;
 }
 
-.menu__burger {
- display: none;
+.active {
+    height: 100%;
 }
 
-.second__cart {
+.menu__burger {
+    display: none;
+}
+
+.nav__button--mobile {
+    height: 100%;
     display: none;
 }
 
 .logo {
-    width: 100%;
     height: 100%;
 }
 
 .nav__box__enlaces {
-    display: flex;
-    align-items: center;
+    padding-inline-start: 0;
     list-style: none;
-    gap: 20px;
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav--enlaces {
-    color: #FFFFFF;
-}
-
-.nav--enlaces:hover {
-    color: #141313;
-}
-
-.session__close {
-    background-color: transparent;
-    border: none;
-    color: rgb(240, 239, 239);
-    font-size: 1.5em;
-}
-
-.session__close:hover {
-    color: rgb(37, 77, 112);
+.cart-prueba3 {
+    height: 100%;
 }
 
 .box__nav__compra {
-    position: relative;
+    height: 100%;
+    display: none;
+}
+
+.box__nav__compra2 {
+    width: 100%;
+    display: flex;
+    height: 100%;
 }
 
 .img__cart {
-    height: 5vh;
+    height: 100%;
 }
 
 .quantity__cart {
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    color: #ffffff;
-    font-size: 1.8em;
     margin: 0;
-    font-weight: 900;
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 /*Charge */
@@ -104,96 +100,100 @@ a {
 
 /*Start*/
 
+
+/*Cards*/
+.container__cards--link {
+    text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container__cards-Route {
-    background-color: #EDEDED;
     height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*Cards*/
-
 .container__cards {
-    height: 70vh;
+    background-color: #efeeea;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 50vw;
+}
+
+.ses {
+    background-color: transparent;
+    border: none;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+.ses:hover {
+    color: rgb(243, 52, 52);
 }
 
 .cards__box {
-    gap: 15px;
-    background-color: #ffffff;
-    padding: 5% 6%;
-    border-radius: 15px 15px 0 0;
-    min-height: max-content;
-    max-height: 60vh;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.container__cards--link {
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 0 0 15px 15px;
-    padding: 2%;
-    margin-top: -1px;
+    gap: 20px;
 }
 
 .cards--link {
-    border: 1px solid #DDDDDD;
-    color: #000000;
+    text-align: center;
+    border: 1px solid black;
     padding: 5px;
 }
 
-.cards--link:hover {
-    border: 2px solid rgba(14, 13, 13, 0);
-    background-color: #c0440a;
-    color: #ffffff;
-    padding: 7px;
-}
 /* THREE CARDS */
 
 .three__cards__box {
-    text-align: center;
-    border: 1px solid #DDDDDD;
-    height: min-content;
-    max-height: 110%;
-    min-width: 33%;
-}
-
-.three__cards__box:hover {
-    width: 35%;
-    text-align: center;
-    border: 2px solid rgb(14, 13, 13);
-    height: min-content;
-    position: relative;
-    bottom: 10px;
+    width: 33%;
+    height: 90%;
 }
 
 .three__cards--img {
-    max-width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .three__cards--price {
-    margin: 1px 0;
-    color: rgba(48, 199, 245, 0.842) ;
-}
-
-.three__cards--price:hover {
-    margin: 1px 0;
-    color: rgba(48, 245, 130, 0.842) ;
+    margin: 0;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .three__cards__text--description {
     overflow-y: auto;
-    width: 100%;
-    height: 100px;
-    padding: 0 5px;
-    box-sizing: border-box;
-    margin: 2px 0;
+    text-align: center;
+    font-size: 1em;
 }
 
+.prueba1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.prueba1:hover {
+    transform: scale(1.02);
+}
 /*products*/
 
 .container__products{
@@ -228,13 +228,14 @@ color: #ffffff;
     text-align: center;
     justify-content: space-evenly;
     overflow-y: auto;
+    gap: 10px;
 }
 
 .products {
+    min-height: max-content;
     width: 20%;
-    min-height: min-content;
+    min-width: 250px;
     margin: 1% 0;
-    gap: 7px;
     background-color: #ffffff;
     border: 1px solid #A3A3A3;
     display: flex;
@@ -242,17 +243,17 @@ color: #ffffff;
 }
 
 .products:hover {
-    width: 19.5%;
+    width: 20%;
     min-height: min-content;
-    margin: 1% 0;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
-    -webkit-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
+    -webkit-box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
     -moz-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    transform: scale(1.02);
 }
 
 .products__color__text {
@@ -268,6 +269,10 @@ color: #ffffff;
     padding: 0 20px;
     color: #030303;
     font-weight: 700;
+}
+
+.card__product {
+    max-width: 500px;
 }
 
 /* categories */
@@ -309,7 +314,7 @@ color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     width: 50vw;
-    gap: 25px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -338,9 +343,6 @@ color: #ffffff;
 .container__cart {
     height: 85vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .container__compras--void {
@@ -351,31 +353,33 @@ color: #ffffff;
     background-color: #DDDDDD;
     width: 100vw;
 }
-
+.cards__compra {
+    height: 100%;
+    width: 10%;
+}
 .compras--img {
-    max-width: 150px
+    width: 100%;
 }
 
-.compras--text {
-    margin: 25px 15px;
-}
 .box__compras__contents {
     overflow-y: auto;
     gap: 100px;
+    text-align: center;
 }
 
 .box__compras__contents--text {
     font-weight: 900;
+    margin: 5px;
 }
 
 .box__compras__contents--cards {
     overflow-y: auto;
-    gap: 100px;
+    gap: 9px;
     border: 2px solid rgb(216, 213, 213);
     margin: 0 25px;
     color: #ffffff;
     background-color: #fc5000;
-    align-items: center;
+    height: 70%;
 }
 
 .box__compras__contents--button {
@@ -412,6 +416,7 @@ color: #ffffff;
     align-items: center;
     width: max-content;
     height: 85vh;
+    flex-wrap: wrap;
 }
 
 .box__product__box__buttons {
@@ -428,20 +433,20 @@ color: #ffffff;
 
 .box__product__box__buttons--left {
     background-color: rgba(255, 255, 255, 0);
-    margin-right: 25px;
     border: 0.1px solid #494a4b00;
     font-weight: 900;
     font-size: 0.5em;
     color: #181818a9;
+    width: 33%;
 }
 
 .box__product__box__buttons--right {
     background-color: rgba(255, 255, 255, 0);
-    margin-left: 25px;
     border: 0.1px solid #494a4b00;
     font-weight: 900;
     font-size: 0.5em;
     color: #181818a9;
+    width: 33%;
 }
 
 .box__product__box__buttons--both:hover {
@@ -452,16 +457,17 @@ color: #ffffff;
     display: flex;
     max-width: 300px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .box__product__button--shop {
     background-color: #ff5507;
-    border: 1px solid #c0440a ;
+    border: 1px solid #c0440a;
     padding: 20px;
     border-radius: 6px;
-    margin-right: 50px;
-    box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
-    -webkit-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
+    box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
+    -webkit-box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
     -moz-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
 }
 
@@ -472,12 +478,11 @@ color: #ffffff;
 
 .box__product__button--go {
     background-color: #ff5507;
-    border: 1px solid #c0440a ;
+    border: 1px solid #c0440a;
     padding: 20px;
-    margin-right: 50px;
     border-radius: 6px;
-    box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
-    -webkit-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
+    box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
+    -webkit-box-shadow: -2px 0px 7px 3px rgb(145 145 145 / 50%);
     -moz-box-shadow: -2px 0px 7px 3px rgba(145,145,145,0.5);
 }
 

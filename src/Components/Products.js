@@ -63,7 +63,7 @@ const Products = ()=>{
                 }</div>
                 <div className="box__products">{ products.map(el=>(
                     <div className="products" key={el.id.toString() + "34"}>
-                        <NavLink to={"/productos/" + el.link}>
+                        <NavLink className="products--img" to={"/productos/" + el.link}>
                         <img className="products--img" src={urlBasic + el.img}></img>
                         <div className="products__color__text">
                             <figcaption>{el.name}</figcaption>
